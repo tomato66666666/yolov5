@@ -1,0 +1,37 @@
+<annotation>
+  <folder/>
+  <filename>&#22270;&#29255;4051.jpg</filename>
+  <database/>
+  <annotation/>
+  <image/>
+  <size>
+    <height>2000</height>
+    <width>3300</width>
+    <depth>3</depth>
+  </size>
+  <segmented/>
+  <object>
+    <name>ng</name>
+    <pose/>
+    <truncated/>
+    <difficult/>
+    <bndbox>
+      <xmin>765.4320987654321</xmin>
+      <ymin>482.716049382716</ymin>
+      <xmax>973.5294117647059</xmax>
+      <ymax>591.9117647058823</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>ng</name>
+    <pose/>
+    <truncated/>
+    <difficult/>
+    <bndbox>
+      <xmin>1685.2971845672575</xmin>
+      <ymin>1170.8029197080293</ymin>
+      <xmax>1698.905109489051</xmax>
+      <ymax>1181.3868613138686</ymax>
+    </bndbox>
+  </object>
+</annotation>

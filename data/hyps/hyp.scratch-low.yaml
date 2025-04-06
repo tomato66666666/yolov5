@@ -1,0 +1,34 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# Hyperparameters for low-augmentation COCO training from scratch
+# python train.py --batch 64 --cfg yolov5n6.yaml --weights '' --data coco.yaml --img 640 --epochs 300 --linear
+# See tutorials for hyperparameter evolution https://github.com/ultralytics/yolov5#tutorials
+
+lr0: 0.01  # 初始学习率（SGD 默认为 1E-2，Adam 默认为 1E-3
+lrf: 0.01  # 最终学习率（lr0 * lrf）
+momentum: 0.937  # SGD 动量或 Adam 的 beta1 参数
+weight_decay: 0.0005  # 权重衰减
+warmup_epochs: 3.0  # 暖启动轮数。在前几轮中，学习率会逐渐增加以稳定训练
+warmup_momentum: 0.8  # 暖启动初始动量
+warmup_bias_lr: 0.1  # 暖启动时的初始偏置学习率
+box: 0.05  # 边界框回归损失的权重
+cls: 0.5  # 分类损失的权重
+cls_pw: 1.0  # 分类 BCELoss 的正样本权重
+obj: 1.0  # 目标检测损失的权重
+obj_pw: 1.0  # 目标检测 BCELoss 的正样本权重
+iou_t: 0.20  # IoU 训练阈值
+anchor_t: 4.0  # 锚框倍数阈值
+# anchors: 3  # anchors per output layer (0 to ignore)
+fl_gamma: 0.0  # focal loss gamma (efficientDet default gamma=1.5)
+hsv_h: 0.015  # 图像 HSV-Hue 增强的比例
+hsv_s: 0.7  # 图像 HSV-Saturation 增强的比例
+hsv_v: 0.4  # 图像 HSV-Value 增强的比例
+degrees: 0.0  # 图像旋转的角度范围 (+/- deg)
+translate: 0.1  # 图像平移的比例 (+/- fraction)
+scale: 0.5  # 图像缩放的比例 (+/- gain)
+shear: 0.0  # 图像剪切的角度范围 (+/- deg)
+perspective: 0.0  # 图像透视变换的比例 (+/- fraction), range 0-0.001
+flipud: 0.0  # 图像上下翻转的概率 (probability)
+fliplr: 0.5  # 图像左右翻转的概率 (probability)
+mosaic: 1.0  # 马赛克数据增强的概率 (probability)
+mixup: 0.0  # MixUp 数据增强的概率(probability)
+copy_paste: 0.0  # Copy-Paste 数据增强的概率(probability)

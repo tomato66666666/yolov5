@@ -1,0 +1,8 @@
+# ceramic.yaml
+path: ./dataset  # 数据集路径
+train: images/train  # 训练图片路径
+val: images/val     # 验证图片路径
+
+# 类别信息
+names:
+  0: stain  # 如果有多个类别，可以继续添加
